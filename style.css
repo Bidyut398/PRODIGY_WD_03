@@ -1,0 +1,156 @@
+/* Reset & Base styles */
+* {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none; /* Prevents text selection */
+}
+
+/* Utility class to center content */
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stylish body background with gradient and spacing */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Deep ocean gradient */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+/* Heading for the game title */
+h1 {
+    font-size: 3rem;
+    color: #00FFF5;
+    text-shadow: 0 0 10px #00FFF5;
+    margin-bottom: 20px;
+}
+
+/* Turn box container with grid layout */
+.turn-container {
+    width: 200px;
+    height: 90px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00FFF5;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Text label for Turn */
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #FF6B81;
+}
+
+/* Turn indicators for X and O */
+.turn-box {
+    border: 2px solid #444;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: #1f2a40;
+    border-radius: 6px;
+}
+
+/* Remove right border for even box to appear merged */
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+/* Highlighting background that moves to indicate whose turn it is */
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #FF6B81; /* Pinkish highlight for active player */
+    z-index: -1;
+    border-radius: 5px;
+    transition: left 0.3s ease-in-out;
+}
+
+/* Main game grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 300px;
+    margin: 40px auto;
+    border: 2px solid #00FFF5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 12px #00FFF5;
+}
+
+/* Single box on the grid */
+.box {
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border: 2px solid #444;
+    background-color: #1f2a40;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect for game boxes */
+.box:hover {
+    background-color: #00FFF5;
+    transform: scale(1.05);
+    color: #000;
+}
+
+/* Style winning boxes with animation */
+.box.win {
+    background-color: #32ff7e !important;
+    color: #000;
+    animation: glow 0.7s ease-in-out infinite alternate;
+}
+
+/* Glowing animation for winning cells */
+@keyframes glow {
+    from { box-shadow: 0 0 10px #32ff7e; }
+    to { box-shadow: 0 0 20px #32ff7e, 0 0 30px #32ff7e; }
+}
+
+/* Result or Winner message */
+#results {
+    font-size: 2rem;
+    color: #FFE162;
+    margin: 20px 0;
+    font-weight: bold;
+    min-height: 40px;
+}
+
+/* Play again button */
+ #play-again {
+    display: block; /* Ensure it behaves as a block element for centering */
+    margin: 20px auto; /* Auto margins center it horizontally */
+    background-color: #FF6B81;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #FF6B81;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+#play-again:hover {
+    background-color: #00FFF5;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00FFF5;
+}

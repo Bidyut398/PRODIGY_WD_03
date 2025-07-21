@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Tic Tac Toe Game</title> <!-- Set the title of the webpage -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <h1 class="title">Tic Tac Toe</h1> <!-- Main title of the game -->
+
+  <div class="turn-indicator"> <!-- Container for turn indicator -->
+    <span>Turn for:</span> <!-- Label for whose turn it is -->
+    <span id="current-turn">X</span> <!-- Display current player's turn -->
+  </div>
+
+  <div class="main-grid"> <!-- Main grid container for the game board -->
+    <div class="box" data-index="0"></div> <!-- Game box with index 0 -->
+    <div class="box" data-index="1"></div> <!-- Game box with index 1 -->
+    <div class="box" data-index="2"></div> <!-- Game box with index 2 -->
+    <div class="box" data-index="3"></div> <!-- Game box with index 3 -->
+    <div class="box" data-index="4"></div> <!-- Game box with index 4 -->
+    <div class="box" data-index="5"></div> <!-- Game box with index 5 -->
+    <div class="box" data-index="6"></div> <!-- Game box with index 6 -->
+    <div class="box" data-index="7"></div> <!-- Game box with index 7 -->
+    <div class="box" data-index="8"></div> <!-- Game box with index 8 -->
+  </div>
+
+  <div id="results" class="message"></div> <!-- Container for displaying game results -->
+
+  <button id="play-again">Play Again</button> <!-- Button to restart the game -->
+
+  <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

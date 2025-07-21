@@ -25,7 +25,7 @@ Display:
 
 SCREENSHOT OF WEBSITE:-
 
-![image alt]()
+![image alt](https://github.com/Bidyut398/PRODIGY_WD_03/blob/eaf2bb0783454b3e46e30c714f354a146ee2436e/Screenshot%202025-07-21%20225642.png)
 
 ![image alt](https://github.com/Bidyut398/PRODIGY_WD_03/blob/5bf734d868470c2f04b1f5104443079495b9a059/Screenshot%202025-07-21%20223622.png)
 

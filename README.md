@@ -23,4 +23,9 @@ Display:
 - A 3x3 grid displays the game board.
 - Current turn and win status are shown above and below the grid.
 
+SCREENSHOT OF WEBSITE:-
+
+![image alt]()
+
+![image alt](https://github.com/Bidyut398/PRODIGY_WD_03/blob/5bf734d868470c2f04b1f5104443079495b9a059/Screenshot%202025-07-21%20223622.png)
 
